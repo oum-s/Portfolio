@@ -1,0 +1,197 @@
+:root {
+  --primary: rgb(224, 223, 223);
+  --secondary: white;
+  --tertiary: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  width: 100%;
+  height: 5em;
+  position: fixed;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  padding: 20px;
+  list-style-type: none;
+}
+header ul li a {
+  color: var(--secondary);
+}
+header .menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+header .menu ul {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+header .menu ul li {
+  font-size: 22px;
+}
+header .menu ul li :hover {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+main {
+  margin-top: 60px;
+}
+main .banner {
+  height: 26em;
+  background-image: url(/img/banner_computer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .banner .banner__container {
+  display: flex;
+  flex-direction: row;
+}
+main .banner .banner__container .profil {
+  display: flex;
+  height: 26em;
+}
+main .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5em;
+}
+main .container #about, main .container #projects, main .container #cv, main .container #contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 5em;
+}
+main .container #about {
+  background-color: var(--primary);
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+main .container #about h1 {
+  padding-bottom: 15px;
+}
+main .container #projects .project__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 75%;
+  min-height: 10em;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  cursor: pointer;
+}
+main .container #projects .project__card__title {
+  width: 15em;
+  padding: 5px;
+  text-align: center;
+  height: 4em;
+}
+main .container #projects .project__card__img {
+  overflow: hidden;
+  height: 10em;
+  padding: 10px;
+}
+main .container #projects .project__card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+main .container #contact {
+  width: 50%;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 20px;
+}
+main .container #contact input[type=text], main .container #contact select, main .container #contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+main .container #contact input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .container #contact input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  /* bottom: 0; */
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  width: 100%;
+  height: 5em;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  padding: 20px;
+  list-style-type: none;
+}
+footer ul li a {
+  color: var(--secondary);
+}
+footer .social__network {
+  display: flex;
+  justify-content: center;
+}
+footer .social__network ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .social__network ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .social__network ul a {
+  padding-bottom: 10px;
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */
